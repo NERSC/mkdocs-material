@@ -39,16 +39,9 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
-        {% if config.copyright %}
-          <div class="md-footer-copyright__highlight">
-            {{ config.copyright }}
-          </div>
-        {% endif %}
-        powered by
-        <a href="http://www.mkdocs.org">MkDocs</a>
-        and
-        <a href="https://squidfunk.github.io/mkdocs-material/">
-          Material for MkDocs</a>
+	<div class="md-footer-copyright__highlight">
+	  <a href="https://www.lbl.gov/disclaimers/" title="Privacy and Security Notice">Privacy and Security Notice</a>
+	</div>
       </div>
       {% block social %}
         {% include "partials/social.html" %}
