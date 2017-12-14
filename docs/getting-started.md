@@ -160,7 +160,7 @@ Color names are case-insensitive, but must match the names of the Material
 Design color palette. Valid values are: `red`, `pink`, `purple`, `deep purple`,
 `indigo`, `blue`, `light blue`, `cyan`, `teal`, `green`, `light green`, `lime`,
 `yellow`, `amber`, `orange`, `deep orange`, `brown`, `grey`, `blue grey` and
-`white`. The four three colors can only be used as a primary color.
+`white`. The last four colors can only be used as a primary color.
 
 If the color is set via this configuration, an additional CSS file that
 defines the color palette is automatically included. If you want to keep things
@@ -301,9 +301,9 @@ theme:
 Material for MkDocs supports internationalization (i18n) and provides
 translations for all template variables and labels in English `en`, French `fr`,
 German `de`, Spanish `es`, Italian `it`, Danish `da`, Portugese `pt`,
-Polish `pl`, Norwegian `no`, Swedish `sv`, Korean `kr`, Russian `ru`,
-Japanese `ja`, Chinese (Simplified) `zh` and Chinese (Traditional) `zh-Hant`.
-Specify the language with:
+Polish `pl`, Norwegian `no`, Dutch `nl`, Swedish `sv`, Korean `kr`,
+Russian `ru`, Japanese `ja`, Chinese (Simplified) `zh` and Chinese (Traditional)
+`zh-Hant`. Specify the language with:
 
 ``` yaml
 theme:
@@ -348,6 +348,12 @@ French `fr`, German `de`, Spanish `es`, Italian `it`, Dutch `du`, Danish `da`,
 Portguese `pt`, Finnish `fi`, Romanian `ro`, Hungarian `hu`, Russian `ru`,
 Norwegian `no`, Swedish `sv`, Japanese `jp` and Turkish `tr`.
 
+!!! info "Search language support for Chinese"
+
+    [lunr-languages][18] currently doesn't include a stemmer for Chinese or
+    other Asian languages, but some users reported the Japanese stemmer to
+    work quite well for those cases.
+
 !!! warning "Only specify the languages you really need"
 
     Be aware that including support for other languages increases the general
@@ -375,7 +381,7 @@ The default favicon can be changed by setting the `favicon` variable to an
 
 ``` yaml
 theme:
-  favicon: 'assets/mages/favicon.ico'
+  favicon: 'assets/images/favicon.ico'
 ```
 
 ### Features

@@ -12,7 +12,7 @@ To determine the currently installed version, use the following command:
 
 ``` sh
 pip show mkdocs-material | grep -E ^Version
-# Version 2.1.1
+# Version 2.2.3
 ```
 
 ### Material 1.x to 2.x
@@ -37,6 +37,34 @@ pip show mkdocs-material | grep -E ^Version
 * The search tokenizer can now be set through `extra.search.tokenizer`.
 
 ## Changelog
+
+### 2.2.3 <small>_ December 13, 2017</small>
+
+* Fixed #630: Admonition sets padding on any last child
+* Adjusted Chinese (Traditional) translations
+
+### 2.2.2 <small>_ December 8, 2017</small>
+
+* Added Dutch translations
+* Adjusted targeted link and footnote offsets
+* Simplified Admonition styles and fixed padding bug
+
+### 2.2.1 <small>_ December 2, 2017</small>
+
+* Fixed [#616][616]: Minor styling error with title-only admonition blocks
+* Removed border for table of contents and improved spacing
+
+  [616]: https://github.com/squidfunk/mkdocs-material/issues/616
+
+### 2.2.0 <small>_ November 22, 2017</small>
+
+* Added support for hero teaser
+* Added Portuguese translations
+* Fixed [#586][586]: Footnote backref target offset regression
+* Fixed [#605][605]: Search stemmers not correctly loaded
+
+  [586]: https://github.com/squidfunk/mkdocs-material/issues/586
+  [605]: https://github.com/squidfunk/mkdocs-material/issues/605
 
 ### 2.1.1 <small>_ November 21, 2017</small>
 
